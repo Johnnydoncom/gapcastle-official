@@ -54,7 +54,7 @@ export default function AboutPage() {
         }
         lede={`Gap Castle was incorporated in ${site.incorporated} and registered as a lender to support individuals and small businesses with the financial bridge they need — especially in education, travel and enterprise.`}
         image={{
-          src: "/images/graduation.jpg",
+          src: "/images/gap-castle-about-hero.webp",
           alt: "Graduating Nigerian university students in red gowns celebrating together",
         }}
         actions={

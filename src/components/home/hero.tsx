@@ -84,7 +84,7 @@ export function Hero() {
 
               <figure className="relative overflow-hidden rounded-[32px] shadow-lift-lg">
                 <Image
-                  src="/images/hero-empowerment.jpg"
+                  src="/images/Homepage-school-business-student-load-support.webp"
                   alt="A proud Nigerian mother in a tailored navy suit standing with her smiling daughter in a crisp secondary school uniform on a sunlit Lagos terrace"
                   width={1920}
                   height={1280}

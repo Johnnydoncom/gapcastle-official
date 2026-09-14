@@ -1,0 +1,14 @@
+{
+    "env": {
+        "ANTHROPIC_BASE_URL": "https://openrouter.ai/api",
+        "ANTHROPIC_AUTH_TOKEN": "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",
+        "ANTHROPIC_API_KEY": "",
+        "ANTHROPIC_MODEL": "nvidia/nemotron-3.5-lightning:free",
+        "ANTHROPIC_DEFAULT_OPUS_MODEL": "laguna-xs-2.1:free",
+        "ANTHROPIC_DEFAULT_SONNET_MODEL": "nvidia/nemotron-3-ultra-550b-a55b:free",
+        "ANTHROPIC_DEFAULT_FABLE_MODEL": "poolside/laguna-s-2.1:free",
+        "ANTHROPIC_DEFAULT_HAIKU_MODEL": "openrouter/free",
+        "CLAUDE_CODE_SUBAGENT_MODEL": "openrouter/free",
+        "CLAUDE_CODE_MAX_CONTENT_TOKENS": "256000"
+    }
+}

@@ -57,9 +57,9 @@ export function BillsBand() {
               </ButtonLink>
             </div>
 
-            <div className="mt-8">
+            {/* <div className="mt-8">
               <AppStoreButtons />
-            </div>
+            </div> */}
           </Reveal>
 
           <Reveal delay={140} className="lg:col-span-5 lg:col-start-8">

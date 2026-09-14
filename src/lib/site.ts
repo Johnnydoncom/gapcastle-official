@@ -210,7 +210,7 @@ export const loanProducts: LoanProduct[] = [
     ],
     stat: { value: "< 24", suffix: "hrs", label: "from application to decision" },
     image: {
-      src: "/images/family-generations.jpg",
+      src: "/images/Gapcastle-family-loan-support-nigeria.webp",
       alt: "A Nigerian family of three generations seated together at home",
     },
     ctaLabel: "Apply for a personal loan",
