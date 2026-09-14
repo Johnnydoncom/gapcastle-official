@@ -11,11 +11,13 @@
   /* --- brand blue ramp, anchored on the two logo colours --- */
   --color-castle-50: #f5f7fe;
   --color-castle-100: #edf3fd;
-  --color-castle-200: #d4e2f9; /* logo sky — exact */
+  --color-castle-200: #d4e2f9;
+  /* logo sky — exact */
   --color-castle-300: #aec1ef;
   --color-castle-400: #7382d3;
   --color-castle-500: #3e4bb4;
-  --color-castle-600: #242e9b; /* logo blue — exact, primary */
+  --color-castle-600: #242e9b;
+  /* logo blue — exact, primary */
   --color-castle-700: #1c257c;
   --color-castle-800: #161c60;
   --color-castle-900: #0e1238;
@@ -111,7 +113,8 @@
   max-width: 80rem;
   margin-inline: auto;
   padding-inline: 1.25rem;
-  @media (width >= 64rem) {
+
+  @media (width >=64rem) {
     padding-inline: 2rem;
   }
 }
@@ -121,13 +124,11 @@
 @utility span-rule {
   position: relative;
   height: 1px;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    var(--color-castle-200) 12%,
-    var(--color-castle-200) 88%,
-    transparent
-  );
+  background: linear-gradient(90deg,
+      transparent,
+      var(--color-castle-200) 12%,
+      var(--color-castle-200) 88%,
+      transparent);
 
   &::before,
   &::after {
@@ -140,9 +141,11 @@
     background: var(--color-azure-500);
     transform: translateY(-50%);
   }
+
   &::before {
     left: 0;
   }
+
   &::after {
     right: 0;
   }
@@ -173,6 +176,7 @@
    COMPONENT PRIMITIVES
    ========================================================================== */
 @layer components {
+
   /* --- scroll reveal ---
      Gated on html.js so that without JavaScript every section renders
      immediately rather than sitting at opacity 0 forever. */
@@ -184,6 +188,7 @@
       transform 0.85s var(--ease-out-expo);
     transition-delay: var(--reveal-delay, 0ms);
   }
+
   .js .reveal[data-visible="true"] {
     opacity: 1;
     transform: none;
@@ -195,6 +200,7 @@
     width: max-content;
     animation: marquee 34s linear infinite;
   }
+
   .marquee-track:hover {
     animation-play-state: paused;
   }
@@ -204,9 +210,10 @@
     display: inline-grid;
     vertical-align: bottom;
     overflow: hidden;
-    height: 1.1em;
+    /* height: 1.1em; */
   }
-  .word-slot > span {
+
+  .word-slot>span {
     grid-area: 1 / 1;
     transition: transform 0.65s var(--ease-in-out-quint), opacity 0.45s ease;
   }
@@ -216,6 +223,7 @@
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(-50%);
   }
@@ -228,6 +236,7 @@
     opacity: 0;
     transform: translateY(18px);
   }
+
   to {
     opacity: 1;
     transform: none;
@@ -250,9 +259,11 @@
     font-size: 1.125rem;
     line-height: 1.8;
   }
-  .prose-gc > * + * {
+
+  .prose-gc>*+* {
     margin-top: 1.3em;
   }
+
   .prose-gc h2 {
     margin-top: 2.2em;
     font-family: var(--font-display);
@@ -261,6 +272,7 @@
     font-weight: 600;
     color: var(--color-ink);
   }
+
   .prose-gc h3 {
     margin-top: 1.9em;
     font-family: var(--font-display);
@@ -269,10 +281,12 @@
     font-weight: 600;
     color: var(--color-ink);
   }
-  .prose-gc h2 + *,
-  .prose-gc h3 + * {
+
+  .prose-gc h2+*,
+  .prose-gc h3+* {
     margin-top: 0.7em;
   }
+
   .prose-gc a {
     color: var(--color-castle-600);
     font-weight: 600;
@@ -281,30 +295,38 @@
     text-decoration-thickness: 2px;
     text-underline-offset: 3px;
   }
+
   .prose-gc a:hover {
     color: var(--color-castle-700);
   }
+
   .prose-gc strong {
     color: var(--color-ink);
     font-weight: 650;
   }
+
   .prose-gc ul,
   .prose-gc ol {
     padding-left: 1.4em;
   }
+
   .prose-gc ul {
     list-style: disc;
   }
+
   .prose-gc ol {
     list-style: decimal;
   }
-  .prose-gc li + li {
+
+  .prose-gc li+li {
     margin-top: 0.5em;
   }
+
   .prose-gc li::marker {
     color: var(--color-azure-600);
     font-weight: 700;
   }
+
   .prose-gc blockquote {
     border-left: 4px solid var(--color-azure-500);
     background: var(--color-castle-50);
@@ -315,17 +337,20 @@
     line-height: 1.55;
     color: var(--color-ink);
   }
+
   .prose-gc img {
     width: 100%;
     border-radius: 22px;
     margin-block: 2em;
   }
+
   .prose-gc code {
     font-size: 0.88em;
     background: var(--color-castle-50);
     border-radius: 6px;
     padding: 0.15em 0.4em;
   }
+
   .prose-gc pre {
     overflow-x: auto;
     background: var(--color-castle-900);
@@ -333,10 +358,12 @@
     border-radius: 16px;
     padding: 1.2em 1.4em;
   }
+
   .prose-gc pre code {
     background: none;
     padding: 0;
   }
+
   .prose-gc hr {
     height: 1px;
     border: 0;
@@ -356,6 +383,7 @@
     text-align: left;
     font-size: 15px;
   }
+
   .data-table th {
     padding: 0.75rem 1.5rem;
     font-size: 0.75rem;
@@ -366,11 +394,13 @@
     border-bottom: 1px solid var(--color-castle-100);
     white-space: nowrap;
   }
+
   .data-table td {
     padding: 1rem 1.5rem;
     vertical-align: top;
   }
-  .data-table tbody tr + tr {
+
+  .data-table tbody tr+tr {
     border-top: 1px solid var(--color-castle-100);
   }
 
@@ -378,6 +408,7 @@
     .data-table thead {
       display: none;
     }
+
     .data-table,
     .data-table tbody,
     .data-table tr,
@@ -385,9 +416,11 @@
       display: block;
       width: 100%;
     }
+
     .data-table tr {
       padding: 1rem 1.25rem;
     }
+
     .data-table td {
       display: grid;
       grid-template-columns: minmax(6.5rem, 34%) 1fr;
@@ -395,6 +428,7 @@
       padding: 0.3rem 0;
       text-align: left !important;
     }
+
     .data-table td::before {
       content: attr(data-label);
       padding-top: 0.15rem;
@@ -404,10 +438,12 @@
       text-transform: uppercase;
       color: color-mix(in srgb, var(--color-ink) 55%, transparent);
     }
+
     .data-table td:not([data-label]) {
       display: block;
       padding-bottom: 0.5rem;
     }
+
     .data-table td:not([data-label])::before {
       content: none;
     }
@@ -423,11 +459,13 @@
     padding: 1.5rem 1.25rem 3rem;
     outline: none;
   }
+
   @media (min-width: 40rem) {
     .rich-editor .ProseMirror {
       padding: 2rem 2.25rem 4rem;
     }
   }
+
   .rich-editor .ProseMirror p.is-editor-empty:first-child::before {
     content: attr(data-placeholder);
     float: left;
@@ -435,18 +473,22 @@
     pointer-events: none;
     color: color-mix(in srgb, var(--color-ink) 35%, transparent);
   }
+
   .rich-editor .ProseMirror img {
     cursor: pointer;
     transition: outline-color 0.15s;
     outline: 3px solid transparent;
     outline-offset: 3px;
   }
+
   .rich-editor .ProseMirror img.ProseMirror-selectednode {
     outline-color: var(--color-azure-500);
   }
+
   .rich-editor .ProseMirror a {
     cursor: text;
   }
+
   .rich-editor.is-dragging .ProseMirror {
     background: var(--color-castle-50);
   }
@@ -459,17 +501,21 @@
   html {
     scroll-behavior: auto;
   }
+
   .js .reveal {
     opacity: 1;
     transform: none;
     transition: none;
   }
+
   .marquee-track {
     animation: none;
   }
-  .word-slot > span {
+
+  .word-slot>span {
     transition: none;
   }
+
   *,
   *::before,
   *::after {

@@ -41,11 +41,11 @@ export function Hero() {
             </p>
 
             <h1
-              className="rise mt-7 font-display text-[clamp(2.5rem,1.4rem+4.6vw,4.3rem)] leading-[1.03] font-semibold tracking-tight"
+              className="rise mt-7 font-display text-[clamp(2.5rem,1.4rem+4.6vw,4.3rem)] leading-[1.15] font-semibold tracking-tight"
               style={delay(60)}
             >
               Bridge the gap to{" "}
-              <span className="text-castle-600">
+              <span className="bg-linear-to-r from-castle-600 to-castle-500 bg-clip-text text-transparent bg-clip-padding">
                 <RotatingWord words={["education", "travel", "business", "opportunity"]} />
               </span>
             </h1>
