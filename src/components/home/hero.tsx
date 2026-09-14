@@ -84,22 +84,22 @@ export function Hero() {
 
               <figure className="relative overflow-hidden rounded-[32px] shadow-lift-lg">
                 <Image
-                  src="/images/education-students.jpg"
-                  alt="Nigerian secondary school students in crisp uniform smiling together with textbooks in a sunny Lagos courtyard"
+                  src="/images/hero-empowerment.jpg"
+                  alt="A proud Nigerian mother in a tailored navy suit standing with her smiling daughter in a crisp secondary school uniform on a sunlit Lagos terrace"
                   width={1920}
                   height={1280}
                   priority
                   sizes="(min-width: 1024px) 44vw, 100vw"
                   className="photo-tone h-[380px] w-full object-cover object-center sm:h-[500px] lg:h-[560px]"
                 />
-                <figcaption className="absolute inset-x-0 bottom-0 hidden bg-gradient-to-t from-castle-950/90 via-castle-950/45 to-transparent p-7 pt-20 text-white sm:block">
+                {/* <figcaption className="absolute inset-x-0 bottom-0 hidden bg-gradient-to-t from-castle-950/90 via-castle-950/45 to-transparent p-7 pt-20 text-white sm:block">
                   <div className="max-w-[15rem] lg:max-w-[17rem]">
                     <p className="font-display text-xl font-semibold">Every child belongs in class.</p>
                     <p className="mt-1 text-sm text-white/75">
                       School fees paid directly to our partner schools.
                     </p>
                   </div>
-                </figcaption>
+                </figcaption> */}
               </figure>
 
               {/* offset secondary frame — sits on the left edge, clear of the caption */}
