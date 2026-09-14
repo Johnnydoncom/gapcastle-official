@@ -85,7 +85,7 @@ export function Hero() {
               <figure className="relative overflow-hidden rounded-[32px] shadow-lift-lg">
                 <Image
                   src="/images/education-students.jpg"
-                  alt="Nigerian secondary school students in uniform gathered together at school"
+                  alt="Nigerian secondary school students in crisp uniform smiling together with textbooks in a sunny Lagos courtyard"
                   width={1920}
                   height={1280}
                   priority
