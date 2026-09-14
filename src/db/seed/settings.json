@@ -1,0 +1,12 @@
+{
+  "notification_emails": "info@gapcastle.com",
+  "send_confirmation_emails": "1",
+  "blog_posts_per_page": "9",
+  "smtp_host": "",
+  "smtp_port": "465",
+  "smtp_security": "ssl",
+  "smtp_user": "",
+  "smtp_pass": "",
+  "mail_from_address": "",
+  "mail_from_name": "Gap Castle"
+}

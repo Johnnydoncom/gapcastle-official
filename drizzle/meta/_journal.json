@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1789318411309,
+      "tag": "0000_utf8mb4-database",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1789318421347,
+      "tag": "0001_initial-schema",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1789365690145,
+      "tag": "0002_users-posts-categories",
+      "breakpoints": true
+    }
+  ]
+}
