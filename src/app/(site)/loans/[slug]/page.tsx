@@ -54,7 +54,7 @@ export default async function LoanDetailPage({ params }: PageProps<"/loans/[slug
         title={product.name}
         lede={product.promise}
         image={product.image}
-        accent={product.accent === "gold" ? "sky" : product.accent === "deep" ? "castle" : "gold"}
+        accent={product.accent === "azure" ? "sky" : product.accent === "deep" ? "castle" : "azure"}
         actions={
           <>
             <ButtonLink href={`/apply/${product.slug}`} size="lg" withArrow>
@@ -68,7 +68,7 @@ export default async function LoanDetailPage({ params }: PageProps<"/loans/[slug
             <div className="absolute -right-3 -bottom-7 rounded-2xl border border-castle-100 bg-white px-5 py-4 shadow-lift lg:-right-6">
               <p className="font-display text-3xl leading-none font-bold text-castle-600">
                 {product.stat.value}
-                {product.stat.suffix && <span className="text-gold-600">{product.stat.suffix}</span>}
+                {product.stat.suffix && <span className="text-azure-600">{product.stat.suffix}</span>}
               </p>
               <p className="mt-1.5 max-w-40 text-xs leading-snug font-medium text-ink/60">{product.stat.label}</p>
             </div>
@@ -80,7 +80,7 @@ export default async function LoanDetailPage({ params }: PageProps<"/loans/[slug
       <Section tone="white">
         <Container className="grid gap-12 lg:grid-cols-12">
           <Reveal className="lg:col-span-5">
-            <Quote className="h-9 w-9 text-gold-500" />
+            <Quote className="h-9 w-9 text-azure-500" />
             <p className="mt-5 font-display text-[clamp(1.6rem,1.2rem+1.7vw,2.4rem)] leading-snug font-semibold">
               {product.summary}
             </p>
@@ -181,7 +181,7 @@ export default async function LoanDetailPage({ params }: PageProps<"/loans/[slug
                       className="photo-tone h-52 w-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
                   </div>
-                  <p className="mt-5 text-[11px] font-bold tracking-[0.2em] text-gold-600 uppercase">{p.kicker}</p>
+                  <p className="mt-5 text-[11px] font-bold tracking-[0.2em] text-azure-600 uppercase">{p.kicker}</p>
                   <h3 className="mt-2 flex items-center justify-between gap-3 font-display text-2xl font-semibold transition-colors group-hover:text-castle-600">
                     {p.name}
                     <ArrowRight

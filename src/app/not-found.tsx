@@ -18,8 +18,8 @@ export default function NotFound() {
           {/* a bridge with its middle span missing */}
           <path d="M0 380 C 220 380, 360 140, 560 140" stroke="currentColor" strokeWidth="2" />
           <path d="M840 140 C 1040 140, 1180 380, 1400 380" stroke="currentColor" strokeWidth="2" />
-          <circle cx="560" cy="140" r="6" className="fill-gold-500" />
-          <circle cx="840" cy="140" r="6" className="fill-gold-500" />
+          <circle cx="560" cy="140" r="6" className="fill-azure-500" />
+          <circle cx="840" cy="140" r="6" className="fill-azure-500" />
         </svg>
 
         <div className="relative container-editorial py-24 text-center lg:py-36">

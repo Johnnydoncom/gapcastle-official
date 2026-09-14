@@ -51,15 +51,15 @@ export default function MobileAppsPage() {
           <Breadcrumbs items={[{ label: "Mobile apps" }]} tone="dark" />
           <div className="mt-10 grid items-center gap-16 lg:grid-cols-12 lg:gap-10">
             <div className="lg:col-span-6">
-              <p className="rise flex items-center gap-2.5 text-[11px] font-bold tracking-[0.22em] text-gold-400 uppercase">
-                <span className="h-1.5 w-1.5 rounded-full bg-gold-500" />
+              <p className="rise flex items-center gap-2.5 text-[11px] font-bold tracking-[0.22em] text-azure-400 uppercase">
+                <span className="h-1.5 w-1.5 rounded-full bg-azure-500" />
                 Android & iOS
               </p>
               <h1
                 className="rise mt-5 font-display text-[clamp(2.5rem,1.5rem+4vw,4.2rem)] leading-[1.03] font-semibold"
                 style={{ "--rise-delay": "60ms" } as React.CSSProperties}
               >
-                Gap Castle, <span className="text-gold-400">in your pocket.</span>
+                Gap Castle, <span className="text-azure-400">in your pocket.</span>
               </h1>
               <p
                 className="rise mt-6 max-w-xl text-lg leading-relaxed text-white/70"
@@ -73,7 +73,7 @@ export default function MobileAppsPage() {
               </div>
               <p className="rise mt-5 text-sm text-white/50" style={{ "--rise-delay": "220ms" } as React.CSSProperties}>
                 Prefer the browser?{" "}
-                <a href={site.payPortal} target="_blank" rel="noreferrer noopener" className="font-semibold text-gold-400 underline-offset-4 hover:underline">
+                <a href={site.payPortal} target="_blank" rel="noreferrer noopener" className="font-semibold text-azure-400 underline-offset-4 hover:underline">
                   Use the web portal
                 </a>
               </p>
@@ -95,7 +95,7 @@ export default function MobileAppsPage() {
           <ul className="mt-14 grid gap-x-10 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
             {features.map((f, i) => (
               <Reveal as="li" key={f.title} delay={i * 60} className="border-t border-castle-200 pt-6">
-                <span className="font-display text-sm font-bold text-gold-600">{String(i + 1).padStart(2, "0")}</span>
+                <span className="font-display text-sm font-bold text-azure-600">{String(i + 1).padStart(2, "0")}</span>
                 <h3 className="mt-3 font-display text-2xl font-semibold">{f.title}</h3>
                 <p className="mt-3 leading-relaxed text-ink/60">{f.body}</p>
               </Reveal>
@@ -108,7 +108,7 @@ export default function MobileAppsPage() {
       <Section tone="paper" className="overflow-hidden">
         <Container className="grid items-center gap-14 lg:grid-cols-12">
           <Reveal as="figure" className="relative lg:col-span-6">
-            <div aria-hidden className="absolute -top-6 -left-5 h-32 w-32 rounded-[26px] bg-gold-500 lg:-top-8 lg:-left-8" />
+            <div aria-hidden className="absolute -top-6 -left-5 h-32 w-32 rounded-[26px] bg-azure-500 lg:-top-8 lg:-left-8" />
             <Image
               src="/images/lagos-cbd.jpg"
               alt="The Lagos central business district skyline"

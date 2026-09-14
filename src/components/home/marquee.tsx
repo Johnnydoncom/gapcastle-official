@@ -20,7 +20,7 @@ export function Marquee({
   items = defaultItems,
   label = "What we fund",
   className,
-  starClassName = "text-gold-500",
+  starClassName = "text-azure-500",
 }: {
   items?: string[];
   label?: string | null;
@@ -31,7 +31,7 @@ export function Marquee({
     <div className={cn("flex items-center gap-8 border-y py-5", className)}>
       {label && (
         <p className="hidden shrink-0 items-center gap-2.5 text-[11px] font-bold tracking-[0.22em] uppercase sm:flex">
-          <span className="h-1.5 w-1.5 rounded-full bg-gold-500" />
+          <span className="h-1.5 w-1.5 rounded-full bg-azure-500" />
           {label}
         </p>
       )}

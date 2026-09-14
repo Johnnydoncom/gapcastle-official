@@ -38,7 +38,7 @@ export function SiteFooter() {
               target="_blank"
               rel="noreferrer noopener"
               aria-label="Gap Castle on Facebook"
-              className="grid h-10 w-10 place-items-center rounded-full border border-white/20 transition-colors hover:border-gold-500 hover:bg-gold-500 hover:text-castle-900"
+              className="grid h-10 w-10 place-items-center rounded-full border border-white/20 transition-colors hover:border-azure-500 hover:bg-azure-500 hover:text-castle-900"
             >
               <Facebook className="h-4 w-4" />
             </a>
@@ -47,7 +47,7 @@ export function SiteFooter() {
               target="_blank"
               rel="noreferrer noopener"
               aria-label="Chat with Gap Castle on WhatsApp"
-              className="grid h-10 w-10 place-items-center rounded-full border border-white/20 transition-colors hover:border-gold-500 hover:bg-gold-500 hover:text-castle-900"
+              className="grid h-10 w-10 place-items-center rounded-full border border-white/20 transition-colors hover:border-azure-500 hover:bg-azure-500 hover:text-castle-900"
             >
               <WhatsApp className="h-4 w-4" />
             </a>
@@ -56,11 +56,11 @@ export function SiteFooter() {
 
         {/* company */}
         <div className="lg:col-span-2">
-          <h2 className="font-sans text-sm font-semibold tracking-wide text-gold-400 uppercase">Company</h2>
+          <h2 className="font-sans text-sm font-semibold tracking-wide text-azure-400 uppercase">Company</h2>
           <ul className="mt-5 space-y-3 text-[15px] text-white/65">
             {company.map((l) => (
               <li key={l.href}>
-                <Link href={l.href} className="transition-colors hover:text-gold-400">
+                <Link href={l.href} className="transition-colors hover:text-azure-400">
                   {l.label}
                 </Link>
               </li>
@@ -70,24 +70,24 @@ export function SiteFooter() {
 
         {/* products */}
         <div className="lg:col-span-2">
-          <h2 className="font-sans text-sm font-semibold tracking-wide text-gold-400 uppercase">
+          <h2 className="font-sans text-sm font-semibold tracking-wide text-azure-400 uppercase">
             Loan Products
           </h2>
           <ul className="mt-5 space-y-3 text-[15px] text-white/65">
             {loanProducts.map((p) => (
               <li key={p.slug}>
-                <Link href={`/loans/${p.slug}`} className="transition-colors hover:text-gold-400">
+                <Link href={`/loans/${p.slug}`} className="transition-colors hover:text-azure-400">
                   {p.name}
                 </Link>
               </li>
             ))}
             <li>
-              <Link href="/bill-payments" className="transition-colors hover:text-gold-400">
+              <Link href="/bill-payments" className="transition-colors hover:text-azure-400">
                 Bill Payments
               </Link>
             </li>
             <li>
-              <Link href="/mobile-apps" className="transition-colors hover:text-gold-400">
+              <Link href="/mobile-apps" className="transition-colors hover:text-azure-400">
                 Mobile Apps
               </Link>
             </li>
@@ -96,30 +96,30 @@ export function SiteFooter() {
 
         {/* visit */}
         <div className="lg:col-span-4">
-          <h2 className="font-sans text-sm font-semibold tracking-wide text-gold-400 uppercase">Visit Us</h2>
+          <h2 className="font-sans text-sm font-semibold tracking-wide text-azure-400 uppercase">Visit Us</h2>
           <ul className="mt-5 space-y-4 text-[15px] text-white/65">
             <li className="flex gap-3">
-              <Pin className="mt-0.5 h-4 w-4 shrink-0 text-gold-400" />
+              <Pin className="mt-0.5 h-4 w-4 shrink-0 text-azure-400" />
               <span>{site.address.full}</span>
             </li>
             <li className="flex gap-3">
-              <Mail className="mt-0.5 h-4 w-4 shrink-0 text-gold-400" />
-              <a href={`mailto:${site.email}`} className="transition-colors hover:text-gold-400">
+              <Mail className="mt-0.5 h-4 w-4 shrink-0 text-azure-400" />
+              <a href={`mailto:${site.email}`} className="transition-colors hover:text-azure-400">
                 {site.email}
               </a>
             </li>
             <li className="flex gap-3">
-              <Phone className="mt-0.5 h-4 w-4 shrink-0 text-gold-400" />
+              <Phone className="mt-0.5 h-4 w-4 shrink-0 text-azure-400" />
               <span className="flex flex-col gap-1">
                 {site.phones.slice(0, 2).map((p) => (
-                  <a key={p} href={telHref(p)} className="transition-colors hover:text-gold-400">
+                  <a key={p} href={telHref(p)} className="transition-colors hover:text-azure-400">
                     {p}
                   </a>
                 ))}
               </span>
             </li>
             <li className="flex gap-3">
-              <Clock className="mt-0.5 h-4 w-4 shrink-0 text-gold-400" />
+              <Clock className="mt-0.5 h-4 w-4 shrink-0 text-azure-400" />
               <span>
                 {site.hours.weekdays}
                 <br />
@@ -137,7 +137,7 @@ export function SiteFooter() {
           </p>
           <p>
             Registered money lender · Incorporated in Nigeria since {site.incorporated} ·{" "}
-            <Link href="/image-credits" className="underline-offset-4 transition-colors hover:text-gold-400 hover:underline">
+            <Link href="/image-credits" className="underline-offset-4 transition-colors hover:text-azure-400 hover:underline">
               Image credits
             </Link>
           </p>

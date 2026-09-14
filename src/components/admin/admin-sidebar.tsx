@@ -147,7 +147,7 @@ export function AdminShellNav({ user, counts }: Props) {
             <Image src="/logo-mark-white.png" alt="" width={1069} height={736} className="h-8 w-auto" />
             <span className="leading-tight">
               <span className="block font-display text-lg font-semibold">Gap Castle</span>
-              <span className="block text-[11px] font-semibold tracking-[0.18em] text-gold-400 uppercase">Admin</span>
+              <span className="block text-[11px] font-semibold tracking-[0.18em] text-azure-400 uppercase">Admin</span>
             </span>
           </Link>
           <button
@@ -190,7 +190,7 @@ export function AdminShellNav({ user, counts }: Props) {
               current?.href === "/admin/account" ? "bg-white/10" : "hover:bg-white/5",
             )}
           >
-            <span className="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-gold-500 text-sm font-bold text-castle-950">
+            <span className="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-azure-500 text-sm font-bold text-castle-950">
               {initials(user.name)}
             </span>
             <span className="min-w-0">
@@ -234,13 +234,13 @@ function NavLink({ item, active, count }: { item: NavItem; active: boolean; coun
         active ? "bg-white text-castle-900" : "text-white/72 hover:bg-white/8 hover:text-white",
       )}
     >
-      <Icon className={cn("h-[18px] w-[18px] shrink-0", active ? "text-castle-600" : "text-white/55 group-hover:text-gold-400")} />
+      <Icon className={cn("h-[18px] w-[18px] shrink-0", active ? "text-castle-600" : "text-white/55 group-hover:text-azure-400")} />
       <span className="flex-1 truncate">{item.label}</span>
       {count > 0 && (
         <span
           className={cn(
             "min-w-6 rounded-full px-1.5 py-0.5 text-center text-[11px] font-bold tabular-nums",
-            active ? "bg-castle-600 text-white" : "bg-gold-500 text-castle-950",
+            active ? "bg-castle-600 text-white" : "bg-azure-500 text-castle-950",
           )}
         >
           {count > 99 ? "99+" : count}

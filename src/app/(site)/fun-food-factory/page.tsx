@@ -42,7 +42,7 @@ export default function FunFoodFactoryPage() {
   return (
     <>
       {/* ================= campaign hero ================= */}
-      <section className="relative overflow-hidden bg-gold-500 text-castle-900">
+      <section className="relative overflow-hidden bg-azure-500 text-castle-900">
         <svg
           aria-hidden
           className="pointer-events-none absolute -top-44 -right-44 h-[560px] w-[560px] text-castle-900/12"
@@ -58,7 +58,7 @@ export default function FunFoodFactoryPage() {
 
           <div className="mt-10 grid items-center gap-16 lg:grid-cols-12 lg:gap-8">
             <div className="lg:col-span-6">
-              <p className="rise inline-flex items-center gap-2.5 rounded-full bg-castle-900 px-4 py-2 text-[11px] font-bold tracking-[0.18em] text-gold-400 uppercase">
+              <p className="rise inline-flex items-center gap-2.5 rounded-full bg-castle-900 px-4 py-2 text-[11px] font-bold tracking-[0.18em] text-azure-400 uppercase">
                 <NigeriaFlag />
                 <span className="hidden sm:inline">Gap Castle CSR ·</span>
                 {funFood.story.signoff}
@@ -133,7 +133,7 @@ export default function FunFoodFactoryPage() {
               </figure>
 
               <div className="absolute right-2 bottom-8 grid h-28 w-28 -rotate-12 place-items-center rounded-full bg-castle-900 p-3 text-center shadow-lift-lg sm:h-32 sm:w-32">
-                <span className="font-display text-lg leading-tight font-semibold text-gold-400 sm:text-xl">
+                <span className="font-display text-lg leading-tight font-semibold text-azure-400 sm:text-xl">
                   Free
                   <br />
                   to join
@@ -159,7 +159,7 @@ export default function FunFoodFactoryPage() {
         <Container className="grid gap-14 lg:grid-cols-12">
           <Reveal className="lg:col-span-6">
             <Eyebrow>Why we started</Eyebrow>
-            <Quote className="mt-8 h-10 w-10 text-gold-500" />
+            <Quote className="mt-8 h-10 w-10 text-azure-500" />
             <p className="mt-4 font-display text-[clamp(1.9rem,1.3rem+2.4vw,3rem)] leading-[1.15] font-semibold">
               {funFood.story.lead}
             </p>
@@ -171,7 +171,7 @@ export default function FunFoodFactoryPage() {
               <p>
                 As part of our Corporate Social Responsibility, we have decided to make some food items available to
                 members of the public. This will no doubt{" "}
-                <mark className="bg-gold-300/70 px-1 font-semibold text-ink">bridge the food shortage gap</mark> in some
+                <mark className="bg-azure-300/70 px-1 font-semibold text-ink">bridge the food shortage gap</mark> in some
                 homes.
               </p>
               <p>{funFood.story.paragraphs[2]}</p>
@@ -195,7 +195,7 @@ export default function FunFoodFactoryPage() {
                 className="flex flex-col border-white/15 py-8 max-lg:odd:border-r max-lg:odd:pr-5 max-lg:even:pl-5 max-lg:[&:nth-child(n+3)]:border-t lg:border-l lg:px-8 lg:first:border-l-0 lg:first:pl-0"
               >
                 <dt className="order-2 mt-3 max-w-[15rem] text-sm leading-snug text-white/70">{fact.label}</dt>
-                <dd className="order-1 font-display text-[clamp(2rem,1.5rem+2vw,3.2rem)] leading-none font-semibold text-gold-400">
+                <dd className="order-1 font-display text-[clamp(2rem,1.5rem+2vw,3.2rem)] leading-none font-semibold text-azure-400">
                   {fact.value}
                 </dd>
               </Reveal>
@@ -217,11 +217,11 @@ export default function FunFoodFactoryPage() {
           </Reveal>
 
           <div className="relative mt-16">
-            <div aria-hidden className="absolute top-7 right-[12.5%] left-[12.5%] hidden border-t-2 border-dashed border-gold-500 lg:block" />
+            <div aria-hidden className="absolute top-7 right-[12.5%] left-[12.5%] hidden border-t-2 border-dashed border-azure-500 lg:block" />
             <ol className="relative grid gap-12 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
               {funFood.steps.map((step, i) => (
                 <Reveal as="li" key={step.step} delay={i * 100} className="text-center lg:px-2">
-                  <span className="mx-auto grid h-14 w-14 place-items-center rounded-full border-4 border-paper bg-gold-500 font-display text-xl font-bold text-castle-900 shadow-gold">
+                  <span className="mx-auto grid h-14 w-14 place-items-center rounded-full border-4 border-paper bg-azure-500 font-display text-xl font-bold text-castle-900 shadow-azure">
                     {step.step}
                   </span>
                   <h3 className="mt-6 font-display text-2xl font-semibold">{step.title}</h3>
@@ -232,7 +232,7 @@ export default function FunFoodFactoryPage() {
           </div>
 
           <Reveal className="mt-16 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 rounded-full border border-castle-200 bg-white px-6 py-4 text-center">
-            <span className="h-2 w-2 rounded-full bg-gold-500" />
+            <span className="h-2 w-2 rounded-full bg-azure-500" />
             <p className="font-display text-lg font-semibold text-castle-700">{funFood.inviteOnly}</p>
             <p className="text-ink/65">Registering does not guarantee a place at a particular game day.</p>
           </Reveal>
@@ -243,7 +243,7 @@ export default function FunFoodFactoryPage() {
       <Section tone="white" className="overflow-hidden">
         <Container className="grid items-center gap-14 lg:grid-cols-12">
           <Reveal as="figure" className="relative lg:col-span-5">
-            <div aria-hidden className="absolute -top-6 -left-5 h-32 w-32 rounded-[26px] bg-gold-500 lg:-top-8 lg:-left-8" />
+            <div aria-hidden className="absolute -top-6 -left-5 h-32 w-32 rounded-[26px] bg-azure-500 lg:-top-8 lg:-left-8" />
             <Image
               src="/images/market-grain.jpg"
               alt="Women selling grains and food staples at a busy Nigerian market"
@@ -254,7 +254,7 @@ export default function FunFoodFactoryPage() {
             />
             <figcaption className="absolute -right-3 -bottom-7 rounded-2xl bg-castle-900 px-5 py-4 text-white shadow-lift lg:-right-8">
               <p className="font-display text-3xl leading-none font-bold">
-                10<span className="text-gold-400"> max</span>
+                10<span className="text-azure-400"> max</span>
               </p>
               <p className="mt-1.5 max-w-36 text-xs leading-snug text-white/70">winners in each game session</p>
             </figcaption>
@@ -269,7 +269,7 @@ export default function FunFoodFactoryPage() {
             <ol className="mt-10 grid border-t border-castle-200 sm:grid-cols-2 sm:gap-x-10">
               {funFood.prizes.map((prize, i) => (
                 <li key={prize} className="flex items-baseline gap-4 border-b border-castle-200 py-4">
-                  <span className="w-6 font-display text-sm font-bold text-gold-600">{pad(i + 1)}</span>
+                  <span className="w-6 font-display text-sm font-bold text-azure-600">{pad(i + 1)}</span>
                   <span className="font-display text-[1.4rem] leading-tight font-semibold">{prize}</span>
                 </li>
               ))}
@@ -299,7 +299,7 @@ export default function FunFoodFactoryPage() {
                 delay={i * 40}
                 className="flex min-h-28 flex-col justify-between gap-4 border-r border-b border-white/15 p-4 transition-colors hover:bg-white/6 sm:min-h-36 sm:gap-6 sm:p-6"
               >
-                <span className="font-display text-sm font-bold text-gold-400">{pad(i + 1)}</span>
+                <span className="font-display text-sm font-bold text-azure-400">{pad(i + 1)}</span>
                 <span className="font-display text-[1.05rem] leading-snug font-semibold text-white sm:text-xl">{game}</span>
               </Reveal>
             ))}
@@ -313,7 +313,7 @@ export default function FunFoodFactoryPage() {
           <Reveal className="lg:sticky lg:top-32 lg:col-span-4">
             <Eyebrow>Before you register</Eyebrow>
             <SectionTitle>Terms &amp; conditions</SectionTitle>
-            <div className="mt-8 rounded-[24px] border-l-4 border-gold-500 bg-white p-6 shadow-lift">
+            <div className="mt-8 rounded-[24px] border-l-4 border-azure-500 bg-white p-6 shadow-lift">
               <p className="text-[11px] font-bold tracking-[0.2em] text-castle-600 uppercase">Please note</p>
               <p className="mt-3 leading-relaxed text-ink/75">{funFood.note}</p>
               <p className="mt-4 font-display text-xl font-semibold text-castle-700">{funFood.inviteOnly}</p>
@@ -345,7 +345,7 @@ export default function FunFoodFactoryPage() {
             <ul className="mt-4 space-y-3.5">
               {nextSteps.map((s) => (
                 <li key={s} className="flex gap-3 text-[15px] text-ink/75">
-                  <span className="mt-0.5 grid h-5 w-5 shrink-0 place-items-center rounded-full bg-gold-500">
+                  <span className="mt-0.5 grid h-5 w-5 shrink-0 place-items-center rounded-full bg-azure-500">
                     <Check className="h-3 w-3 text-castle-900" />
                   </span>
                   {s}
@@ -373,7 +373,7 @@ export default function FunFoodFactoryPage() {
 
             {/* a transfer slip — the details a donor actually needs, copyable */}
             <div className="mt-9 overflow-hidden rounded-[24px] bg-white text-ink shadow-lift-lg">
-              <div className="flex items-center justify-between gap-4 bg-gold-500 px-6 py-3.5 text-castle-900">
+              <div className="flex items-center justify-between gap-4 bg-azure-500 px-6 py-3.5 text-castle-900">
                 <span className="text-[11px] font-bold tracking-[0.2em] uppercase">Payment information</span>
                 <span className="font-semibold">{funFood.donation.bank}</span>
               </div>

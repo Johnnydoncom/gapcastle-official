@@ -1,14 +1,14 @@
 import type { ReactNode } from "react";
 import { cn } from "@/lib/cn";
 
-type Tone = "paper" | "white" | "navy" | "deep" | "gold" | "none";
+type Tone = "paper" | "white" | "navy" | "deep" | "azure" | "none";
 
 const tones: Record<Tone, string> = {
   paper: "bg-paper text-ink",
   white: "bg-white text-ink",
   navy: "bg-castle-600 text-white",
   deep: "bg-castle-900 text-white",
-  gold: "bg-gold-500 text-castle-900",
+  azure: "bg-azure-500 text-castle-900",
   none: "",
 };
 
@@ -49,14 +49,14 @@ export function Container({
   return <div className={cn("container-editorial", className)}>{children}</div>;
 }
 
-/** Small tracked label. The gold dot is the recurring brand tick. */
+/** Small tracked label. The sky-blue dot is the recurring brand tick. */
 export function Eyebrow({
   children,
   tone = "dark",
   className,
 }: {
   children: ReactNode;
-  tone?: "dark" | "light" | "gold";
+  tone?: "dark" | "light" | "azure";
   className?: string;
 }) {
   return (
@@ -64,15 +64,15 @@ export function Eyebrow({
       className={cn(
         "flex items-center gap-2.5 text-[11px] font-bold tracking-[0.22em] uppercase",
         tone === "dark" && "text-castle-600",
-        tone === "light" && "text-gold-400",
-        tone === "gold" && "text-castle-900/70",
+        tone === "light" && "text-azure-400",
+        tone === "azure" && "text-castle-900/70",
         className,
       )}
     >
       <span
         className={cn(
           "h-1.5 w-1.5 shrink-0 rounded-full",
-          tone === "gold" ? "bg-castle-900" : "bg-gold-500",
+          tone === "azure" ? "bg-castle-900" : "bg-azure-500",
         )}
       />
       {children}
@@ -115,7 +115,7 @@ export function Lede({
   );
 }
 
-/** The "span" divider — a hairline bridging two gold anchor points. */
+/** The "span" divider — a hairline bridging two sky-blue anchor points. */
 export function SpanRule({ className }: { className?: string }) {
   return <div aria-hidden className={cn("span-rule w-full", className)} />;
 }

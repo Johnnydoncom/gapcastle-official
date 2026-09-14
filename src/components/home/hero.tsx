@@ -27,7 +27,7 @@ export function Hero() {
           strokeDasharray="3 9"
           opacity="0.8"
         />
-        <circle cx="800" cy="120" r="5" className="fill-gold-500" />
+        <circle cx="800" cy="120" r="5" className="fill-azure-500" />
       </svg>
 
       <div className="relative container-editorial pt-10 pb-8 lg:pt-20 lg:pb-12">
@@ -35,7 +35,7 @@ export function Hero() {
           {/* ---------- copy (painted immediately — no JS-gated reveal above the fold) ---------- */}
           <div className="lg:col-span-6">
             <p className="rise inline-flex items-center gap-2.5 rounded-full border border-castle-200 bg-white px-4 py-2 text-[11.5px] font-bold tracking-[0.16em] text-castle-600 uppercase">
-              <span className="h-1.5 w-1.5 rounded-full bg-gold-500" />
+              <span className="h-1.5 w-1.5 rounded-full bg-azure-500" />
               Registered money lender
               <span className="hidden sm:inline">· Ikeja, Lagos</span>
             </p>
@@ -76,10 +76,10 @@ export function Hero() {
           {/* ---------- editorial image composition ---------- */}
           <div className="rise lg:col-span-6" style={delay(140)}>
             <div className="relative">
-              {/* gold anchor block behind the main frame */}
+              {/* sky-blue anchor block behind the main frame */}
               <div
                 aria-hidden
-                className="absolute -top-5 -right-4 h-36 w-36 rounded-[28px] bg-gold-500 lg:-right-6 lg:h-44 lg:w-44"
+                className="absolute -top-5 -right-4 h-36 w-36 rounded-[28px] bg-azure-500 lg:-right-6 lg:h-44 lg:w-44"
               />
 
               <figure className="relative overflow-hidden rounded-[32px] shadow-lift-lg">

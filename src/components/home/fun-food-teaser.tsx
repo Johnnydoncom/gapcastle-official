@@ -6,7 +6,7 @@ import { funFood } from "@/lib/fun-food";
 
 export function FunFoodTeaser() {
   return (
-    <Section tone="gold" className="overflow-hidden">
+    <Section tone="azure" className="overflow-hidden">
       <svg
         aria-hidden
         className="pointer-events-none absolute -top-24 -right-24 h-80 w-80 text-castle-900/15"
@@ -46,7 +46,7 @@ export function FunFoodTeaser() {
           </Reveal>
 
           <Reveal delay={110} className="lg:col-span-6 lg:col-start-7">
-            <Eyebrow tone="gold">Corporate social responsibility</Eyebrow>
+            <Eyebrow tone="azure">Corporate social responsibility</Eyebrow>
             <SectionTitle className="text-castle-900">{funFood.title}</SectionTitle>
             <p className="mt-3 font-display text-xl font-semibold text-castle-900/70">{funFood.strap}</p>
             <p className="mt-5 max-w-xl leading-relaxed text-castle-900/75">{funFood.intro}</p>
@@ -54,7 +54,7 @@ export function FunFoodTeaser() {
             <ol className="mt-8 space-y-5">
               {funFood.steps.map((step) => (
                 <li key={step.step} className="flex items-start gap-4">
-                  <span className="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-castle-900 font-display font-bold text-gold-400">
+                  <span className="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-castle-900 font-display font-bold text-azure-400">
                     {step.step}
                   </span>
                   <p className="text-castle-900/85">

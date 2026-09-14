@@ -239,7 +239,7 @@ export function LoanApplicationForm({
                       className={cn(
                         "grid h-6 w-6 shrink-0 place-items-center rounded-full text-xs font-bold transition-colors",
                         done && "bg-castle-600 text-white",
-                        current && "bg-gold-500 text-castle-900",
+                        current && "bg-azure-500 text-castle-900",
                         !done && !current && "bg-castle-100 text-ink/60",
                       )}
                     >

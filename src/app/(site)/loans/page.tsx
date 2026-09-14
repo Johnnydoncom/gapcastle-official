@@ -125,7 +125,7 @@ export default function LoansPage() {
                   return (
                     <tr key={p.slug} className="group border-b border-castle-100 align-top transition-colors hover:bg-castle-50/70">
                       <th scope="row" className="py-6 pr-6">
-                        <span className="block font-display text-sm font-bold text-gold-600">{p.index}</span>
+                        <span className="block font-display text-sm font-bold text-azure-600">{p.index}</span>
                         <Link
                           href={`/loans/${p.slug}`}
                           className="mt-1 block font-display text-xl font-semibold text-ink transition-colors hover:text-castle-600"

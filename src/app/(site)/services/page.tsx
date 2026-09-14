@@ -83,7 +83,7 @@ export default function ServicesPage() {
                   href={row.href}
                   className="group grid grid-cols-[auto_1fr_auto] items-center gap-x-5 gap-y-1 py-6 sm:grid-cols-12 sm:gap-6 lg:py-7"
                 >
-                  <span className="row-span-2 self-start font-display text-lg font-bold text-gold-600 sm:col-span-1 sm:row-span-1 sm:self-center">
+                  <span className="row-span-2 self-start font-display text-lg font-bold text-azure-600 sm:col-span-1 sm:row-span-1 sm:self-center">
                     {row.n}
                   </span>
                   <span className="hidden overflow-hidden rounded-xl sm:col-span-2 sm:block">
@@ -128,7 +128,7 @@ export default function ServicesPage() {
           </Reveal>
 
           <Reveal delay={100} className="lg:col-span-6 lg:col-start-7">
-            <p className="font-display text-lg font-bold text-gold-600">{advisory.index} — Advisory</p>
+            <p className="font-display text-lg font-bold text-azure-600">{advisory.index} — Advisory</p>
             <h2 className="mt-2 font-display text-[clamp(1.9rem,1.3rem+2.2vw,2.8rem)] leading-tight font-semibold">
               {advisory.name}
             </h2>
@@ -160,8 +160,8 @@ export default function ServicesPage() {
               {large.name}
             </h2>
             <p className="mt-5 leading-relaxed text-white/65">{large.body}</p>
-            <p className="mt-6 inline-flex items-center gap-2.5 rounded-full border border-white/15 px-4 py-2 text-sm font-semibold text-gold-400">
-              <span className="h-1.5 w-1.5 rounded-full bg-gold-400" />
+            <p className="mt-6 inline-flex items-center gap-2.5 rounded-full border border-white/15 px-4 py-2 text-sm font-semibold text-azure-400">
+              <span className="h-1.5 w-1.5 rounded-full bg-azure-400" />
               For requirements above ₦3,000,000
             </p>
             <div className="mt-9">
@@ -175,7 +175,7 @@ export default function ServicesPage() {
             <ul className="border-t border-white/15">
               {facilities.map((f, i) => (
                 <li key={f} className="group flex items-baseline justify-between gap-6 border-b border-white/15 py-5">
-                  <span className="font-display text-[clamp(1.6rem,1.2rem+1.8vw,2.6rem)] leading-none font-semibold text-white transition-colors group-hover:text-gold-400">
+                  <span className="font-display text-[clamp(1.6rem,1.2rem+1.8vw,2.6rem)] leading-none font-semibold text-white transition-colors group-hover:text-azure-400">
                     {f}
                   </span>
                   <span className="font-display text-sm font-bold text-white/55">{String(i + 1).padStart(2, "0")}</span>
@@ -191,7 +191,7 @@ export default function ServicesPage() {
         <Container className="grid items-center gap-14 lg:grid-cols-12">
           <Reveal className="lg:order-2 lg:col-span-5 lg:col-start-8">
             <div className="relative">
-              <div aria-hidden className="absolute -right-5 -bottom-6 h-32 w-32 rounded-[26px] bg-gold-500 lg:-right-8 lg:-bottom-8" />
+              <div aria-hidden className="absolute -right-5 -bottom-6 h-32 w-32 rounded-[26px] bg-azure-500 lg:-right-8 lg:-bottom-8" />
               <Image
                 src="/images/lagos-traffic.jpg"
                 alt="A busy Lagos street lined with market stalls and yellow danfo buses"
@@ -204,7 +204,7 @@ export default function ServicesPage() {
           </Reveal>
 
           <Reveal delay={100} className="lg:order-1 lg:col-span-6">
-            <p className="font-display text-lg font-bold text-gold-600">{bills.index} — Everyday</p>
+            <p className="font-display text-lg font-bold text-azure-600">{bills.index} — Everyday</p>
             <h2 className="mt-2 font-display text-[clamp(1.9rem,1.3rem+2.2vw,2.8rem)] leading-tight font-semibold">
               {bills.name}
             </h2>

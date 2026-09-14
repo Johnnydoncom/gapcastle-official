@@ -170,7 +170,7 @@ export function NewsletterForm({ source }: { source: string }) {
   if (state.status === "success") {
     return (
       <p role="status" className="flex items-center gap-3 font-semibold text-castle-700">
-        <span className="grid h-7 w-7 place-items-center rounded-full bg-gold-500">
+        <span className="grid h-7 w-7 place-items-center rounded-full bg-azure-500">
           <Check className="h-4 w-4 text-castle-900" />
         </span>
         {state.message}

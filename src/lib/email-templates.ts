@@ -51,18 +51,18 @@ export function renderEmail(content: EmailContent): { html: string; text: string
         <div style="font:700 20px/1.1 Georgia,'Times New Roman',serif;letter-spacing:1px;color:#ffffff">GAP CASTLE</div>
         <div style="font:italic 13px/1.6 Georgia,'Times New Roman',serif;color:#d4e2f9">${esc(site.tagline.toLowerCase())}…</div>
       </td></tr>
-      <tr><td style="height:4px;line-height:4px;font-size:0;background:#f7b733">&nbsp;</td></tr>
+      <tr><td style="height:4px;line-height:4px;font-size:0;background:#4bb3f2">&nbsp;</td></tr>
       <tr><td style="padding:30px 28px 32px">
         <p style="margin:0 0 10px;font:700 11px/1 Arial,Helvetica,sans-serif;letter-spacing:2px;text-transform:uppercase;color:#242e9b">${esc(content.eyebrow)}</p>
         <h1 style="margin:0 0 14px;font:600 24px/1.3 Georgia,'Times New Roman',serif;color:#14172e">${esc(content.heading)}</h1>
         <p style="margin:0 0 22px;font:400 15px/1.65 Arial,Helvetica,sans-serif;color:#4a4f69">${esc(content.intro)}</p>
         ${rows.length ? `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-top:1px solid #edf3fd">${rowsHtml}</table>` : ""}
-        ${content.note ? `<p style="margin:22px 0 0;padding:14px 16px;background:#fff8e6;border-left:3px solid #f7b733;font:400 14px/1.6 Arial,Helvetica,sans-serif;color:#14172e">${esc(content.note)}</p>` : ""}
+        ${content.note ? `<p style="margin:22px 0 0;padding:14px 16px;background:#eaf6fe;border-left:3px solid #4bb3f2;font:400 14px/1.6 Arial,Helvetica,sans-serif;color:#14172e">${esc(content.note)}</p>` : ""}
         ${content.cta ? `<p style="margin:26px 0 0"><a href="${esc(content.cta.href)}" style="display:inline-block;background:#242e9b;color:#ffffff;text-decoration:none;font:600 14px/1 Arial,Helvetica,sans-serif;padding:14px 24px;border-radius:999px">${esc(content.cta.label)}</a></p>` : ""}
       </td></tr>
       <tr><td style="padding:18px 28px;background:#0e1238;font:400 12px/1.7 Arial,Helvetica,sans-serif;color:#b8bdd6">
         ${esc(site.legalName)} · ${esc(site.address.full)}<br>
-        ${esc(site.phones[0])} · <a href="mailto:${esc(site.email)}" style="color:#ffd25e;text-decoration:none">${esc(site.email)}</a>
+        ${esc(site.phones[0])} · <a href="mailto:${esc(site.email)}" style="color:#8fd0fa;text-decoration:none">${esc(site.email)}</a>
       </td></tr>
     </table>
   </td></tr>

@@ -86,7 +86,7 @@ export default async function BlogPostPage({ params }: PageProps<"/blog/[slug]">
                 href={categoryHref}
                 className="rise inline-flex items-center gap-2.5 text-[11px] font-bold tracking-[0.22em] text-castle-600 uppercase"
               >
-                <span className="h-1.5 w-1.5 rounded-full bg-gold-500" />
+                <span className="h-1.5 w-1.5 rounded-full bg-azure-500" />
                 {post.category.name}
               </Link>
               <h1 className="rise mt-5 font-display text-[clamp(2.2rem,1.4rem+3.2vw,3.6rem)] leading-[1.08] font-semibold">

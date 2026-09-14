@@ -22,7 +22,7 @@ export function PageHero({
   breadcrumbs,
   actions,
   aside,
-  accent = "gold",
+  accent = "azure",
 }: {
   eyebrow: string;
   title: ReactNode;
@@ -32,7 +32,7 @@ export function PageHero({
   actions?: ReactNode;
   /** Rendered inside the image frame — for a floating stat or badge. */
   aside?: ReactNode;
-  accent?: "gold" | "sky" | "castle";
+  accent?: "azure" | "sky" | "castle";
 }) {
   return (
     <section className="relative overflow-hidden border-b border-castle-100 bg-paper">
@@ -79,7 +79,7 @@ export function PageHero({
                   aria-hidden
                   className={cn(
                     "absolute -bottom-5 -left-5 h-32 w-32 rounded-[26px] lg:-bottom-7 lg:-left-7 lg:h-40 lg:w-40",
-                    accent === "gold" && "bg-gold-500",
+                    accent === "azure" && "bg-azure-500",
                     accent === "sky" && "bg-castle-200",
                     accent === "castle" && "bg-castle-600",
                   )}
@@ -133,7 +133,7 @@ export function Breadcrumbs({ items, tone = "light" }: { items: Crumb[]; tone?: 
             {c.href && i < trail.length - 1 ? (
               <Link
                 href={c.href}
-                className={cn("transition-colors", onDark ? "hover:text-gold-400" : "hover:text-castle-600")}
+                className={cn("transition-colors", onDark ? "hover:text-azure-400" : "hover:text-castle-600")}
               >
                 {c.label}
               </Link>

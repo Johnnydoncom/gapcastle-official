@@ -123,7 +123,7 @@ export default async function AdminBlogPage({ searchParams }: PageProps<"/admin/
                           {post.title}
                         </Link>
                         {post.isFeatured && (
-                          <span className="ml-2 rounded-full bg-gold-300 px-2 py-0.5 text-xs font-semibold text-castle-900">Featured</span>
+                          <span className="ml-2 rounded-full bg-azure-300 px-2 py-0.5 text-xs font-semibold text-castle-900">Featured</span>
                         )}
                         <span className="block truncate text-sm text-ink/55">/blog/{post.slug}</span>
                         <span className="mt-1 flex gap-4 text-sm font-semibold">

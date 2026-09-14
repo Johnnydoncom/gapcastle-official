@@ -81,7 +81,7 @@ export default function AboutPage() {
                 <dd>
                   <span className="block font-display text-[clamp(2.4rem,1.8rem+2.2vw,3.5rem)] leading-none font-semibold text-castle-600">
                     {f.value}
-                    {f.suffix && <span className="text-gold-600">{f.suffix}</span>}
+                    {f.suffix && <span className="text-azure-600">{f.suffix}</span>}
                   </span>
                   <span className="mt-3 block max-w-[14rem] text-sm leading-snug text-ink/60">{f.label}</span>
                 </dd>
@@ -109,7 +109,7 @@ export default function AboutPage() {
                 <Reveal as="li" key={c.title} delay={i * 100} className="relative">
                   <span
                     aria-hidden
-                    className="absolute top-1 -left-[41px] h-4 w-4 rounded-full border-4 border-paper bg-gold-500"
+                    className="absolute top-1 -left-[41px] h-4 w-4 rounded-full border-4 border-paper bg-azure-500"
                   />
                   <p className="text-[11px] font-bold tracking-[0.2em] text-castle-600 uppercase">{c.year}</p>
                   <h3 className="mt-2 font-display text-2xl font-semibold">{c.title}</h3>
@@ -188,7 +188,7 @@ export default function AboutPage() {
                 delay={i * 80}
                 className="grid gap-2 border-b border-castle-200 py-7 sm:grid-cols-12 sm:gap-6"
               >
-                <span className="font-display text-sm font-bold text-gold-600 sm:col-span-1 sm:pt-1.5">
+                <span className="font-display text-sm font-bold text-azure-600 sm:col-span-1 sm:pt-1.5">
                   {String(i + 1).padStart(2, "0")}
                 </span>
                 <h3 className="font-display text-2xl font-semibold sm:col-span-5">{value.title}</h3>
@@ -200,10 +200,10 @@ export default function AboutPage() {
       </Section>
 
       {/* ---------- social impact ---------- */}
-      <Section tone="gold" className="overflow-hidden">
+      <Section tone="azure" className="overflow-hidden">
         <Container className="grid items-center gap-14 lg:grid-cols-12">
           <Reveal className="lg:col-span-6">
-            <Eyebrow tone="gold">Social impact</Eyebrow>
+            <Eyebrow tone="azure">Social impact</Eyebrow>
             <SectionTitle className="text-castle-900">Finance is personal. So is community.</SectionTitle>
             <p className="mt-5 max-w-xl leading-relaxed text-castle-900/75">
               The Fun Food Factory is our Corporate Social Responsibility programme: free game days in
@@ -235,12 +235,12 @@ export default function AboutPage() {
             <p className="mt-4 font-display text-3xl font-semibold">A real office, with real people.</p>
           </div>
           <div className="flex gap-4 lg:col-span-4">
-            <Pin className="mt-1 h-5 w-5 shrink-0 text-gold-600" />
+            <Pin className="mt-1 h-5 w-5 shrink-0 text-azure-600" />
             <p className="leading-relaxed text-ink/70">{site.address.full}</p>
           </div>
           <div className="flex flex-col gap-4 lg:col-span-3">
             <p className="flex gap-3 text-ink/70">
-              <Clock className="mt-0.5 h-5 w-5 shrink-0 text-gold-600" />
+              <Clock className="mt-0.5 h-5 w-5 shrink-0 text-azure-600" />
               Mon–Fri, 9am–4pm
             </p>
             <TextLink href="/contact#map">Get directions</TextLink>

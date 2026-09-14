@@ -6,7 +6,7 @@ import { SMTP_SECURITY_LABELS, type MailStatus } from "@/lib/mailer";
 export function MailStatusSummary({ mail, detailed }: { mail: MailStatus; detailed: boolean }) {
   if (!mail.configured) {
     return (
-      <div className="rounded-2xl border border-gold-500 bg-gold-300/30 px-4 py-3 text-sm leading-relaxed">
+      <div className="rounded-2xl border border-azure-500 bg-azure-300/30 px-4 py-3 text-sm leading-relaxed">
         <p className="flex items-center gap-2 font-semibold">
           <StatusBadge status="skipped" label="Not sending" />
         </p>

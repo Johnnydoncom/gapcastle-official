@@ -6,15 +6,15 @@ import type { LoanProduct } from "@/lib/site";
 import { cn } from "@/lib/cn";
 
 const accentBlock: Record<LoanProduct["accent"], string> = {
-  castle: "bg-gold-500",
-  gold: "bg-castle-200",
+  castle: "bg-azure-500",
+  azure: "bg-castle-200",
   deep: "bg-castle-600",
 };
 
 const statTone: Record<LoanProduct["accent"], string> = {
   castle: "bg-white text-ink border border-castle-100",
-  gold: "bg-castle-900 text-white",
-  deep: "bg-gold-500 text-castle-900",
+  azure: "bg-castle-900 text-white",
+  deep: "bg-azure-500 text-castle-900",
 };
 
 /**
@@ -71,8 +71,8 @@ export function ProductRow({
               {product.stat.suffix && (
                 <span
                   className={cn(
-                    product.accent === "castle" && "text-gold-600",
-                    product.accent === "gold" && "text-gold-400",
+                    product.accent === "castle" && "text-azure-600",
+                    product.accent === "azure" && "text-azure-400",
                     product.accent === "deep" && "text-castle-700",
                   )}
                 >
@@ -99,7 +99,7 @@ export function ProductRow({
           flip ? "lg:order-1 lg:col-start-1" : "lg:order-2 lg:col-start-7",
         )}
       >
-        <p className="font-display text-lg font-bold text-gold-600">
+        <p className="font-display text-lg font-bold text-azure-600">
           {product.index} — {product.kicker}
         </p>
         <h3 className="mt-2 font-display text-[clamp(1.75rem,1.2rem+2vw,2.6rem)] leading-tight font-semibold">
@@ -125,7 +125,7 @@ export function ProductRow({
           <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
             <ButtonLink
               href={`/apply/${product.slug}`}
-              variant={product.accent === "gold" ? "accent" : "primary"}
+              variant={product.accent === "azure" ? "accent" : "primary"}
               withArrow
             >
               {product.ctaLabel}

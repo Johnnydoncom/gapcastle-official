@@ -119,7 +119,7 @@ export type LoanProduct = {
   /** Which "I need…" answer routes here. */
   need: string;
   needLabel: string;
-  accent: "castle" | "gold" | "deep";
+  accent: "castle" | "azure" | "deep";
 };
 
 export const loanProducts: LoanProduct[] = [
@@ -187,7 +187,7 @@ export const loanProducts: LoanProduct[] = [
     ctaLabel: "Plan my trip",
     need: "travel",
     needLabel: "I am travelling abroad",
-    accent: "gold",
+    accent: "azure",
   },
   {
     slug: "personal-loan",

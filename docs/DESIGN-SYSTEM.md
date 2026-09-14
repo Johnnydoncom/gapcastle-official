@@ -16,8 +16,8 @@ It appears as:
 
 | Motif | Where | Implementation |
 | --- | --- | --- |
-| Hairline arc with a gold node | Home hero, process steps | Inline SVG `path` in `hero.tsx`, `process.tsx` |
-| Span rule — hairline with gold end-dots | Section dividers | `.span-rule` utility, `<SpanRule />` |
+| Hairline arc with a sky-blue node | Home hero, process steps | Inline SVG `path` in `hero.tsx`, `process.tsx` |
+| Span rule — hairline with sky-blue end-dots | Section dividers | `.span-rule` utility, `<SpanRule />` |
 | Offset colour block behind a photo | Every editorial image | Absolutely positioned `div` in `ProductRow`, `PageHero` |
 | Dashed "bridge" joining numbered steps | How it works, Fun Food journey | SVG / dashed border |
 | A bridge with its middle missing | 404 page | `not-found.tsx` |
@@ -29,8 +29,9 @@ blob, glassmorphism panel or decorative icon grid.
 
 ## 2. Colour
 
-Both brand blues are sampled **exactly** from the official logo artwork. Gold is
-the single warm accent.
+Both brand blues are sampled **exactly** from the official logo artwork. The single
+accent is **azure** — a brighter, clearer cousin of the logo sky, strong enough to carry
+calls to action on navy. The palette is all-blue: no yellow or warm accent.
 
 | Token | Hex | Role |
 | --- | --- | --- |
@@ -38,23 +39,24 @@ the single warm accent.
 | `castle-200` | `#D4E2F9` | **Logo sky.** Tints, check-mark discs, offset blocks |
 | `castle-900` | `#0E1238` | Deep navy surfaces: utility bar, footer, dark bands |
 | `castle-50 / 100` | `#F5F7FE / #EDF3FD` | Quiet panels, hover rows |
-| `gold-500` | `#F7B733` | Accent fills: CTAs on dark, Fun Food Factory, badges |
-| `gold-400` | `#FFD25E` | Accent **text on dark** surfaces |
-| `gold-600` | `#9A6700` | Accent **text on light** surfaces (index numbers, kickers) |
+| `azure-500` | `#4BB3F2` | Accent fills: CTAs on dark, Fun Food Factory, badges, focus ring |
+| `azure-400` | `#8FD0FA` | Accent **text on dark** surfaces |
+| `azure-300` | `#C7E6FC` | Accent tints: soft highlights, featured labels |
+| `azure-600` | `#0B69AD` | Accent **text on light** surfaces (index numbers, kickers) |
 | `ink` | `#14172E` | Body text |
 | `paper` | `#FBFBFE` | Page background |
 
 ### Contrast rules (WCAG 2.2 AA)
 
-- `castle-600` on white — 10.8 : 1. `castle-900` on `gold-500` — 10.1 : 1.
-- **Never** set text in `gold-400/500` on a light background; use `gold-600`.
+- `castle-600` on white — 10.8 : 1. `castle-900` on `azure-500` — 7.8 : 1. `azure-600` on white — 5.8 : 1.
+- **Never** set text in `azure-400/500` on a light background; use `azure-600`.
 - Secondary text on light: `text-ink/60` minimum. Don't go below it, except for placeholder text (`placeholder:text-ink/35`).
 - Secondary text on navy: `text-white/55` minimum.
 
 ### Surface rhythm
 
 Pages alternate surfaces so each section reads as its own chapter:
-`paper → white → paper → navy/deep → gold → paper`. Avoid two navy bands in a row.
+`paper → white → paper → navy/deep → azure → paper`. Avoid two navy bands in a row.
 
 ---
 
@@ -71,7 +73,7 @@ Both are self-hosted through `next/font` (no layout shift, no third-party reques
 | --- | --- | --- |
 | Hero h1 | `clamp(2.5rem, 1.4rem + 4.6vw, 4.3rem)` | One per page |
 | Section title | `clamp(2rem, 1.3rem + 3vw, 3.25rem)` | `<SectionTitle>` |
-| Eyebrow | 11px, 700, `tracking-[0.22em]`, uppercase + gold dot | `<Eyebrow>` |
+| Eyebrow | 11px, 700, `tracking-[0.22em]`, uppercase + sky-blue dot | `<Eyebrow>` |
 | Lede | 18px / relaxed, `ink/65` | `<Lede>` |
 | Body | 15–16px / relaxed | — |
 
@@ -122,8 +124,8 @@ Headings use `text-wrap: balance`; paragraphs use `text-wrap: pretty`.
 ### Buttons
 
 - **Primary** (logo blue) — the one action a section wants.
-- **Accent** (gold) — primary action on navy, or travel/bills where blue would disappear.
-- **TextLink** — secondary action beside a button, with the animated gold underline.
+- **Accent** (azure) — primary action on navy, or travel/bills where the logo blue would disappear.
+- **TextLink** — secondary action beside a button, with the animated sky-blue underline.
 - One primary button per section. Application CTAs are prominent but never
   repeated back-to-back.
 
@@ -205,7 +207,7 @@ without JavaScript.
 
 - [ ] One `h1` per page; headings in order.
 - [ ] Every image has meaningful `alt`, or `alt=""` + `aria-hidden` when decorative.
-- [ ] Interactive elements reachable by keyboard with a visible gold focus ring.
+- [ ] Interactive elements reachable by keyboard with a visible sky-blue focus ring.
 - [ ] Text contrast follows §2.
 - [ ] Hero image uses `priority`; everything else lazy-loads through `next/image` (AVIF/WebP).
 - [ ] No layout shift from fonts (`next/font`) or images (explicit `width`/`height` or `fill`).

@@ -5,7 +5,7 @@
    Palette sampled directly from the official logo artwork:
      #242E9B  deep royal blue  (the "G", the wordmark)
      #D4E2F9  pale sky blue    (the "C")
-   Gold is the single warm accent — it carries CTAs and the Fun Food Factory.
+   Azure is the single accent — a brighter cousin of the logo sky that carries CTAs.
    ========================================================================== */
 @theme {
   /* --- brand blue ramp, anchored on the two logo colours --- */
@@ -21,13 +21,13 @@
   --color-castle-900: #0e1238;
   --color-castle-950: #080b24;
 
-  /* --- warm accent --- */
-  --color-gold-300: #ffe09a;
-  --color-gold-400: #ffd25e;
-  --color-gold-500: #f7b733;
-  /* 600 is the text-on-light gold: 4.7:1 on paper (WCAG AA). Never use 400/500 for text on light. */
-  --color-gold-600: #9a6700;
-  --color-gold-700: #7a5200;
+  /* --- accent: sky blue, brighter than the logo sky (no yellow) --- */
+  --color-azure-300: #c7e6fc;
+  --color-azure-400: #8fd0fa;
+  --color-azure-500: #4bb3f2;
+  /* 600 is the text-on-light azure: 5.8:1 on white (WCAG AA). Never use 400/500 for text on light. */
+  --color-azure-600: #0b69ad;
+  --color-azure-700: #094f82;
 
   /* --- neutrals --- */
   --color-ink: #14172e;
@@ -50,7 +50,7 @@
   /* --- elevation: navy-tinted, never neutral grey --- */
   --shadow-lift: 0 18px 40px -22px rgb(14 18 56 / 0.38);
   --shadow-lift-lg: 0 34px 70px -30px rgb(14 18 56 / 0.42);
-  --shadow-gold: 0 14px 30px -12px rgb(247 183 51 / 0.55);
+  --shadow-azure: 0 14px 30px -12px rgb(75 179 242 / 0.45);
 }
 
 /* ==========================================================================
@@ -74,12 +74,12 @@
   }
 
   ::selection {
-    background-color: var(--color-gold-400);
+    background-color: var(--color-azure-400);
     color: var(--color-castle-900);
   }
 
   :focus-visible {
-    outline: 3px solid var(--color-gold-500);
+    outline: 3px solid var(--color-azure-500);
     outline-offset: 2px;
     border-radius: 2px;
   }
@@ -137,7 +137,7 @@
     width: 7px;
     height: 7px;
     border-radius: 9999px;
-    background: var(--color-gold-500);
+    background: var(--color-azure-500);
     transform: translateY(-50%);
   }
   &::before {
@@ -150,7 +150,7 @@
 
 /* Animated underline for text links */
 @utility link-span {
-  background-image: linear-gradient(var(--color-gold-500), var(--color-gold-500));
+  background-image: linear-gradient(var(--color-azure-500), var(--color-azure-500));
   background-size: 0% 2px;
   background-repeat: no-repeat;
   background-position: left bottom;
@@ -277,7 +277,7 @@
     color: var(--color-castle-600);
     font-weight: 600;
     text-decoration: underline;
-    text-decoration-color: var(--color-gold-500);
+    text-decoration-color: var(--color-azure-500);
     text-decoration-thickness: 2px;
     text-underline-offset: 3px;
   }
@@ -302,11 +302,11 @@
     margin-top: 0.5em;
   }
   .prose-gc li::marker {
-    color: var(--color-gold-600);
+    color: var(--color-azure-600);
     font-weight: 700;
   }
   .prose-gc blockquote {
-    border-left: 4px solid var(--color-gold-500);
+    border-left: 4px solid var(--color-azure-500);
     background: var(--color-castle-50);
     border-radius: 0 18px 18px 0;
     padding: 1.1em 1.4em;
@@ -442,7 +442,7 @@
     outline-offset: 3px;
   }
   .rich-editor .ProseMirror img.ProseMirror-selectednode {
-    outline-color: var(--color-gold-500);
+    outline-color: var(--color-azure-500);
   }
   .rich-editor .ProseMirror a {
     cursor: text;

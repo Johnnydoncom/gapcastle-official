@@ -5,10 +5,10 @@ import { cn } from "@/lib/cn";
 import { humanize } from "@/lib/format";
 
 const badgeTone: Record<string, string> = {
-  new: "bg-gold-300 text-castle-900",
-  pledged: "bg-gold-300 text-castle-900",
-  registered: "bg-gold-300 text-castle-900",
-  skipped: "bg-gold-300 text-castle-900",
+  new: "bg-azure-500 text-castle-950",
+  pledged: "bg-azure-500 text-castle-950",
+  registered: "bg-azure-500 text-castle-950",
+  skipped: "bg-azure-500 text-castle-950",
   draft: "bg-ink/10 text-ink/70",
   reviewing: "bg-castle-200 text-castle-800",
   read: "bg-castle-200 text-castle-800",
@@ -127,7 +127,7 @@ export function StatCard({
       href={href}
       className={cn(
         "block rounded-2xl border p-5 transition-[transform,box-shadow] hover:-translate-y-0.5 hover:shadow-lift sm:rounded-3xl sm:p-6",
-        highlight ? "border-gold-500 bg-gold-300/40" : "border-castle-100 bg-white",
+        highlight ? "border-azure-500 bg-azure-300/40" : "border-castle-100 bg-white",
       )}
     >
       <p className="text-sm font-medium text-ink/60">{label}</p>

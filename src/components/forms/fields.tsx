@@ -250,7 +250,7 @@ export function ChoiceCards({
             className={cn(
               "group relative flex cursor-pointer items-start gap-3 rounded-2xl border bg-white p-4 transition-all duration-200",
               "has-[:checked]:border-castle-600 has-[:checked]:bg-castle-50 has-[:checked]:shadow-[0_0_0_3px_rgb(36_46_155_/_0.12)]",
-              "has-[:focus-visible]:ring-4 has-[:focus-visible]:ring-gold-500/40",
+              "has-[:focus-visible]:ring-4 has-[:focus-visible]:ring-azure-500/40",
               error ? "border-red-400" : "border-castle-200 hover:border-castle-400",
             )}
           >
@@ -391,7 +391,7 @@ export function SuccessPanel({
 }) {
   return (
     <div role="status" aria-live="polite" className="rounded-[28px] border border-castle-100 bg-white p-8 text-center shadow-lift lg:p-12">
-      <span className="mx-auto grid h-16 w-16 place-items-center rounded-full bg-gold-500">
+      <span className="mx-auto grid h-16 w-16 place-items-center rounded-full bg-azure-500">
         <Check className="h-8 w-8 text-castle-900" />
       </span>
       <h2 className="mt-6 font-display text-3xl font-semibold">{title}</h2>

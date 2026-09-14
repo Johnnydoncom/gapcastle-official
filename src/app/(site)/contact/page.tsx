@@ -62,7 +62,7 @@ export default async function ContactPage({ searchParams }: PageProps<"/contact"
           <div className="mt-8 grid items-end gap-10 lg:grid-cols-12">
             <div className="lg:col-span-7">
               <h1 className="rise font-display text-[clamp(2.5rem,1.5rem+4vw,4.2rem)] leading-[1.03] font-semibold">
-                Let&rsquo;s talk about your <span className="text-gold-400">gap.</span>
+                Let&rsquo;s talk about your <span className="text-azure-400">gap.</span>
               </h1>
               <p className="rise mt-6 max-w-xl text-lg leading-relaxed text-white/75" style={{ "--rise-delay": "80ms" } as React.CSSProperties}>
                 For every service enquiry, send the form or reach us on any of our lines. We come back to you
@@ -74,7 +74,7 @@ export default async function ContactPage({ searchParams }: PageProps<"/contact"
                 href={telHref(site.phones[0])}
                 className="group inline-flex items-center gap-4 rounded-2xl bg-white px-6 py-4 text-castle-700 shadow-lift-lg transition-transform duration-300 hover:-translate-y-1"
               >
-                <span className="grid h-12 w-12 place-items-center rounded-full bg-gold-500 transition-transform duration-300 group-hover:scale-110">
+                <span className="grid h-12 w-12 place-items-center rounded-full bg-azure-500 transition-transform duration-300 group-hover:scale-110">
                   <Phone className="h-5 w-5 text-castle-900" />
                 </span>
                 <span>
@@ -105,17 +105,17 @@ export default async function ContactPage({ searchParams }: PageProps<"/contact"
           {/* one composed panel rather than a stack of look-alike cards */}
           <Reveal delay={120} as="aside" className="overflow-hidden rounded-[30px] bg-castle-900 text-white lg:sticky lg:top-32 lg:col-span-5">
             <div className="p-7 sm:p-9">
-              <p className="text-[11px] font-bold tracking-[0.2em] text-gold-400 uppercase">Reach us directly</p>
+              <p className="text-[11px] font-bold tracking-[0.2em] text-azure-400 uppercase">Reach us directly</p>
 
               <dl className="mt-6 divide-y divide-white/10">
                 <div className="flex gap-4 py-5 first:pt-0">
                   <dt className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-white/8">
-                    <Phone className="h-4.5 w-4.5 text-gold-400" />
+                    <Phone className="h-4.5 w-4.5 text-azure-400" />
                     <span className="sr-only">Phone</span>
                   </dt>
                   <dd className="space-y-1.5">
                     {site.phones.map((p) => (
-                      <a key={p} href={telHref(p)} className="block text-[15.5px] font-medium transition-colors hover:text-gold-400">
+                      <a key={p} href={telHref(p)} className="block text-[15.5px] font-medium transition-colors hover:text-azure-400">
                         {p}
                       </a>
                     ))}
@@ -124,11 +124,11 @@ export default async function ContactPage({ searchParams }: PageProps<"/contact"
 
                 <div className="flex gap-4 py-5">
                   <dt className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-white/8">
-                    <Mail className="h-4.5 w-4.5 text-gold-400" />
+                    <Mail className="h-4.5 w-4.5 text-azure-400" />
                     <span className="sr-only">Email</span>
                   </dt>
                   <dd>
-                    <a href={`mailto:${site.email}`} className="text-[15.5px] font-medium transition-colors hover:text-gold-400">
+                    <a href={`mailto:${site.email}`} className="text-[15.5px] font-medium transition-colors hover:text-azure-400">
                       {site.email}
                     </a>
                     <p className="mt-1 text-sm text-white/50">Enquiries, partnerships and support.</p>
@@ -137,12 +137,12 @@ export default async function ContactPage({ searchParams }: PageProps<"/contact"
 
                 <div className="flex gap-4 py-5">
                   <dt className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-white/8">
-                    <Pin className="h-4.5 w-4.5 text-gold-400" />
+                    <Pin className="h-4.5 w-4.5 text-azure-400" />
                     <span className="sr-only">Office address</span>
                   </dt>
                   <dd>
                     <p className="text-[15.5px] leading-relaxed">{site.address.full}</p>
-                    <a href="#map" className="mt-1.5 inline-flex items-center gap-1.5 text-sm font-semibold text-gold-400">
+                    <a href="#map" className="mt-1.5 inline-flex items-center gap-1.5 text-sm font-semibold text-azure-400">
                       See it on the map <ArrowRight className="h-3.5 w-3.5" />
                     </a>
                   </dd>
@@ -150,7 +150,7 @@ export default async function ContactPage({ searchParams }: PageProps<"/contact"
 
                 <div className="flex gap-4 py-5 last:pb-0">
                   <dt className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-white/8">
-                    <Clock className="h-4.5 w-4.5 text-gold-400" />
+                    <Clock className="h-4.5 w-4.5 text-azure-400" />
                     <span className="sr-only">Working hours</span>
                   </dt>
                   <dd className="w-full space-y-1.5 text-[15px]">
@@ -171,11 +171,11 @@ export default async function ContactPage({ searchParams }: PageProps<"/contact"
               href={site.social.whatsapp}
               target="_blank"
               rel="noreferrer noopener"
-              className="group flex items-center justify-between gap-4 bg-gold-500 px-7 py-6 text-castle-900 transition-colors hover:bg-gold-400 sm:px-9"
+              className="group flex items-center justify-between gap-4 bg-azure-500 px-7 py-6 text-castle-900 transition-colors hover:bg-azure-400 sm:px-9"
             >
               <span className="flex items-center gap-4">
                 <span className="grid h-11 w-11 place-items-center rounded-xl bg-castle-900">
-                  <WhatsApp className="h-5 w-5 text-gold-400" />
+                  <WhatsApp className="h-5 w-5 text-azure-400" />
                 </span>
                 <span>
                   <span className="block font-display text-xl font-semibold">Chat on WhatsApp</span>
@@ -200,7 +200,7 @@ export default async function ContactPage({ searchParams }: PageProps<"/contact"
             />
             <div className="absolute top-4 left-4 max-w-[18rem] rounded-2xl border border-castle-100 bg-white px-5 py-4 shadow-lift sm:top-6 sm:left-6">
               <p className="flex items-center gap-2 font-display text-lg font-semibold text-castle-700">
-                <Pin className="h-4 w-4 text-gold-600" />
+                <Pin className="h-4 w-4 text-azure-600" />
                 Gap Castle office
               </p>
               <p className="mt-1 text-sm leading-snug text-ink/60">{site.address.full}</p>

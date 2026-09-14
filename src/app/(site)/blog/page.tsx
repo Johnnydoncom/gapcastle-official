@@ -145,7 +145,7 @@ function LeadPost({ post }: { post: BlogPost }) {
           className="h-72 w-full transition-transform duration-700 group-hover:scale-[1.03] sm:h-96 lg:h-[440px]"
         />
         {post.isFeatured && (
-          <span className="absolute top-5 left-5 rounded-full bg-gold-500 px-3.5 py-1.5 text-[11px] font-bold tracking-[0.18em] text-castle-900 uppercase">
+          <span className="absolute top-5 left-5 rounded-full bg-azure-500 px-3.5 py-1.5 text-[11px] font-bold tracking-[0.18em] text-castle-900 uppercase">
             Featured
           </span>
         )}

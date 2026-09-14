@@ -136,12 +136,12 @@ export default async function ApplyPage({ params }: PageProps<"/apply/[product]"
                 className="photo-tone h-44 w-full object-cover"
               />
               <figcaption className="p-6">
-                <p className="text-[11px] font-bold tracking-[0.2em] text-gold-400 uppercase">{product.kicker}</p>
+                <p className="text-[11px] font-bold tracking-[0.2em] text-azure-400 uppercase">{product.kicker}</p>
                 <p className="mt-2 font-display text-xl leading-snug font-semibold">{product.promise}</p>
                 <ul className="mt-5 space-y-2.5">
                   {product.highlights.map((h) => (
                     <li key={h.label} className="flex gap-2.5 text-sm text-white/75">
-                      <Check className="mt-0.5 h-4 w-4 shrink-0 text-gold-400" />
+                      <Check className="mt-0.5 h-4 w-4 shrink-0 text-azure-400" />
                       {h.label}
                     </li>
                   ))}
@@ -159,7 +159,7 @@ export default async function ApplyPage({ params }: PageProps<"/apply/[product]"
               <ul className="mt-4 space-y-3">
                 {documents[loanType].map((doc) => (
                   <li key={doc} className="flex gap-3 text-[14px] leading-snug text-ink/75">
-                    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-gold-500" />
+                    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-azure-500" />
                     {doc}
                   </li>
                 ))}

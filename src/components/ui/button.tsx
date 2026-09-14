@@ -13,7 +13,7 @@ const base =
 
 const variants: Record<Variant, string> = {
   primary: "bg-castle-600 text-white hover:bg-castle-700 shadow-lift hover:shadow-lift-lg",
-  accent: "bg-gold-500 text-castle-900 hover:bg-gold-400 shadow-gold",
+  accent: "bg-azure-500 text-castle-900 hover:bg-azure-400 shadow-azure",
   outline:
     "border border-castle-200 bg-white text-castle-700 hover:border-castle-400 hover:bg-castle-50",
   ghost: "text-castle-700 hover:bg-castle-50",
@@ -86,7 +86,7 @@ const Arrow = () => (
   <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
 );
 
-/** Text link with the animated gold "span" underline. */
+/** Text link with the animated sky-blue "span" underline. */
 export function TextLink({
   href,
   children,

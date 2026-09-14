@@ -121,7 +121,7 @@ export default function PrivacyPolicyPage() {
             {blocks.map((b, i) => (
               <section key={b.heading} id={`s-${i}`} className="scroll-mt-32 border-b border-castle-100 py-9 first:pt-0 last:border-0">
                 <h2 className="font-display text-2xl font-semibold">
-                  <span className="mr-3 text-base font-bold text-gold-600">{String(i + 1).padStart(2, "0")}</span>
+                  <span className="mr-3 text-base font-bold text-azure-600">{String(i + 1).padStart(2, "0")}</span>
                   {b.heading}
                 </h2>
                 {b.paragraphs?.map((p) => (
@@ -133,7 +133,7 @@ export default function PrivacyPolicyPage() {
                   <ul className="mt-4 space-y-3">
                     {b.list.map((item) => (
                       <li key={item.slice(0, 30)} className="flex gap-3 leading-relaxed text-ink/70">
-                        <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-gold-500" />
+                        <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-azure-500" />
                         {item}
                       </li>
                     ))}

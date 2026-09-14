@@ -62,7 +62,7 @@ export function SiteHeader() {
           <div className="flex items-center gap-5">
             <a
               href={telHref(site.phones[0])}
-              className="flex items-center gap-2 transition-colors hover:text-gold-400"
+              className="flex items-center gap-2 transition-colors hover:text-azure-400"
             >
               <Phone className="h-3.5 w-3.5" />
               <span className="hidden sm:inline">{site.phones[0]}</span>
@@ -70,7 +70,7 @@ export function SiteHeader() {
             </a>
             <a
               href={`mailto:${site.email}`}
-              className="hidden items-center gap-2 transition-colors hover:text-gold-400 md:flex"
+              className="hidden items-center gap-2 transition-colors hover:text-azure-400 md:flex"
             >
               <Mail className="h-3.5 w-3.5" />
               {site.email}
@@ -81,10 +81,10 @@ export function SiteHeader() {
               <Clock className="h-3.5 w-3.5" />
               Mon–Fri, 9:00am–4:00pm
             </span>
-            <span className="flex items-center gap-2 font-semibold text-gold-400">
+            <span className="flex items-center gap-2 font-semibold text-azure-400">
               <span className="relative flex h-1.5 w-1.5">
-                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-gold-400 opacity-75" />
-                <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-gold-400" />
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-azure-400 opacity-75" />
+                <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-azure-400" />
               </span>
               Funds in under 24 hours
             </span>

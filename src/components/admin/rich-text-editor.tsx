@@ -266,7 +266,7 @@ export function RichTextEditor({ initialContent, onChange, library, onLibraryAdd
         )}
 
         {state.image && (
-          <div className="flex flex-col gap-2 border-t border-castle-100 bg-gold-300/20 px-3 py-3 sm:flex-row sm:items-center">
+          <div className="flex flex-col gap-2 border-t border-castle-100 bg-azure-300/20 px-3 py-3 sm:flex-row sm:items-center">
             <label htmlFor="image-alt" className="shrink-0 text-sm font-semibold">
               Image description
             </label>

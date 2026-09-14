@@ -37,7 +37,7 @@ export function PhoneMock() {
             </p>
             <p className="mt-1.5 font-display text-3xl font-bold">₦124,500</p>
             <div className="mt-4 flex gap-2">
-              <span className="rounded-full bg-gold-500 px-3.5 py-1.5 text-[11px] font-bold text-castle-900">
+              <span className="rounded-full bg-azure-500 px-3.5 py-1.5 text-[11px] font-bold text-castle-900">
                 Fund wallet
               </span>
               <span className="rounded-full border border-white/25 px-3.5 py-1.5 text-[11px] font-semibold">
@@ -85,7 +85,7 @@ export function PhoneMock() {
 
             <div className="mt-5 flex items-center justify-between rounded-xl bg-castle-900 px-4 py-3 text-white">
               <span className="text-[12px] font-semibold">Apply for a loan</span>
-              <ArrowRight className="h-3.5 w-3.5 text-gold-400" />
+              <ArrowRight className="h-3.5 w-3.5 text-azure-400" />
             </div>
           </div>
         </div>
@@ -93,7 +93,7 @@ export function PhoneMock() {
 
       {/* floating confirmation chip */}
       <div className="absolute -bottom-4 -left-2 flex items-center gap-2 rounded-full bg-white px-3.5 py-2 shadow-lift sm:-left-10">
-        <span className="grid h-5 w-5 place-items-center rounded-full bg-gold-500">
+        <span className="grid h-5 w-5 place-items-center rounded-full bg-azure-500">
           <Check className="h-3 w-3 text-castle-900" />
         </span>
         <span className="text-[11px] font-semibold text-ink">Token delivered</span>

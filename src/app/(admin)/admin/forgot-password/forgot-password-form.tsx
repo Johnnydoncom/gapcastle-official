@@ -13,7 +13,7 @@ export function ForgotPasswordForm() {
   if (state.status === "success") {
     return (
       <div role="status" aria-live="polite" className="space-y-5">
-        <span className="grid h-12 w-12 place-items-center rounded-full bg-gold-500 text-castle-900">
+        <span className="grid h-12 w-12 place-items-center rounded-full bg-azure-500 text-castle-900">
           <Mail className="h-6 w-6" />
         </span>
         <p className="leading-relaxed text-ink/75">{state.message}</p>
