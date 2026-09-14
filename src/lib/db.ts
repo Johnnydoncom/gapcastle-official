@@ -35,7 +35,15 @@ function createPool() {
     dateStrings: true,
     charset: "utf8mb4",
   });
-  if (onVercel) attachDatabasePool(pool);
+  if (onVercel) {
+    // attachDatabasePool recognises mysql2's core pool (it reads config.connectionConfig),
+    // not the promise wrapper around it. Never let it break a build or a request.
+    try {
+      attachDatabasePool(pool.pool);
+    } catch (error) {
+      console.warn("[db] attachDatabasePool skipped:", error instanceof Error ? error.message : error);
+    }
+  }
   return pool;
 }
 
