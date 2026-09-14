@@ -144,8 +144,8 @@ export const loanProducts: LoanProduct[] = [
     ],
     stat: { value: "24", suffix: "hrs", label: "average time to disbursement" },
     image: {
-      src: "/images/education-students.jpg",
-      alt: "Nigerian secondary school students in uniform gathered together at school",
+      src: "/images/school-fee-students.jpg",
+      alt: "A smiling Nigerian secondary school student in uniform writing in her notebook during class in a sunlit classroom",
     },
     secondaryImage: {
       src: "/images/classroom-computers.jpg",
@@ -177,8 +177,8 @@ export const loanProducts: LoanProduct[] = [
     ],
     stat: { value: "100", suffix: "%", label: "of the trip covered — not just the ticket" },
     image: {
-      src: "/images/travel-terminal.jpg",
-      alt: "Travellers inside the departure hall at Murtala Muhammed International Airport, Lagos",
+      src: "/images/travel-journey.jpg",
+      alt: "A confident young Nigerian woman in smart travel attire with suitcase and passport in an international departure hall",
     },
     secondaryImage: {
       src: "/images/travel-tarmac.jpg",
@@ -239,8 +239,8 @@ export const loanProducts: LoanProduct[] = [
     ],
     stat: { value: "₦3m", suffix: "+", label: "sourced through partner lenders" },
     image: {
-      src: "/images/market-trader.jpg",
-      alt: "A Nigerian market trader smiling behind a stall of fresh vegetables and produce",
+      src: "/images/business-sme-enterprise.jpg",
+      alt: "Two ambitious young Nigerian entrepreneurs reviewing business strategy documents and laptop on a sunlit Lagos terrace",
     },
     secondaryImage: {
       src: "/images/artisan-workshop.jpg",
