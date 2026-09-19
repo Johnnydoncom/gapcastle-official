@@ -83,7 +83,7 @@ created — shared hosts often default to latin1, which cannot store characters 
 | `SMTP_HOST`, `SMTP_PORT`, `SMTP_SECURE`, `SMTP_USER`, `SMTP_PASS`, `MAIL_FROM_ADDRESS` | Optional fallback email server — used only while no SMTP host is saved in **Admin → Settings → Email server** |
 | `SETTINGS_ENCRYPTION_KEY` | Optional, 32+ characters. Encrypts the SMTP password saved in the dashboard (defaults to `SESSION_SECRET`) |
 | `APP_URL` | Public site URL used in email links and password reset links (`http://localhost:3000` locally) |
-| `MARKER_ENABLED` | Optional. The Marker.io feedback button loads on the live production deployment only; set `true` to load it elsewhere (for example locally) |
+| `FEEDBACK_WIDGET_ENABLED` | Optional. The ReviseFlow feedback widget loads on the live production deployment only; set `true` to load it elsewhere (for example locally) |
 
 ## Email notifications
 

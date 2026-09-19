@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
+import { feedbackWidgetEnabled } from "@/components/shared/feedback-widget";
 import { TawkChat } from "@/components/shared/tawk-chat";
 import { site } from "@/lib/site";
 
@@ -42,7 +43,7 @@ export default function SiteLayout({ children }: { children: ReactNode }) {
       </main>
       <SiteFooter />
       {/* live chat: public pages only — the admin layout does not include it */}
-      <TawkChat />
+      <TawkChat clearOfFeedbackButton={feedbackWidgetEnabled()} />
       <script
         type="application/ld+json"
          

@@ -1,7 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Fraunces, Inter } from "next/font/google";
-import { MarkerWidget } from "@/components/shared/marker-widget";
-import { markerEnabled } from "@/lib/marker";
+import { FeedbackWidget } from "@/components/shared/feedback-widget";
 import { site } from "@/lib/site";
 import "./globals.css";
 
@@ -79,8 +78,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       </head>
       <body className="flex min-h-full flex-col bg-paper text-ink">
         {children}
-        {/* Marker.io feedback button — public site and admin, production only */}
-        {markerEnabled() && <MarkerWidget />}
+        {/* ReviseFlow feedback widget — public site and admin, production only */}
+        <FeedbackWidget />
       </body>
     </html>
   );
