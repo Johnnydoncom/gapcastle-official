@@ -10,7 +10,7 @@ export function feedbackWidgetEnabled() {
 
 /** ReviseFlow feedback widget — rendered by the root layout, so it shows on the public site and in the admin. */
 export function FeedbackWidget() {
-  // if (!feedbackWidgetEnabled()) return null;
+  if (!feedbackWidgetEnabled()) return null;
 
   return (
     <Script
